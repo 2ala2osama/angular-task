@@ -6,11 +6,20 @@
             <h2>Tour & Travel</h2>
         </div>
     </section>
-    <app-contactform></app-contactform>
-    <div class="row">
-        <div class="col-4" *ngFor="let contact of contactService.contacts">
-            <app-contact-component [contactInput]="contact"></app-contact-component>
-        </div>
 
-    </div>
+    <section fxLayout="row">
+
+        <div class="column form-contact"  >
+            <app-contactform></app-contactform>
+            <div class="row">
+                <div class="col-4" *ngFor="let contact of contactService.contacts">
+                    <app-contact-component [contactInput]="contact"></app-contact-component>
+                </div>
+
+            </div>
+        </div>
+        <div fxLayout="column"  fxHide.sm>
+            <app-sidecomponent></app-sidecomponent>
+        </div>
+    </section>
 </div>
