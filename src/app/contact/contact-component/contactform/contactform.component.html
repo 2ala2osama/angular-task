@@ -1,0 +1,41 @@
+<form class="example-form" (submit)="onSubmit()">
+    <!-- <form class="example-form" (submit)="onSubmit()"> -->
+    <div class="row">
+
+        <div class="col-md-3">
+
+            <mat-label>First Name</mat-label>
+            <input class="form-control" type="text" [formControl]="fname" [(ngModel)]='fName' required>
+
+        </div>
+        <div class="col-md-3">
+            <mat-label>Last Name</mat-label>
+            <input class="form-control" type="text" [formControl]="lname">
+        </div>
+        <div class="col-md-3">
+
+            <mat-label>Job Title</mat-label>
+            <input class="form-control" type="text" [formControl]="Job" [(ngModel)]='job' required>
+
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-3">
+            <mat-label>Enter your email</mat-label>
+            <input class="form-control" type="text" [formControl]=" email" [(ngModel)]='contactEmail' required>
+        </div>
+        <div class="col-md-3">
+            <mat-label>Phone Number</mat-label>
+            <input class="form-control" type="text" placeholder="enter phone numner" [formControl]="telnum"
+                [(ngModel)]='telNum' required>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <button [disabled]="addContactBtnEnable()">ADD CONTACT</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,16 @@
+<div class="jumbotron">
+
+    <section fxLayout="row" class="title-company" fxLayoutAlign="start end">
+        <div fxLayout="column">
+            <span>Home / COMPANY PROFILES/</span>
+            <h2>Tour & Travel</h2>
+        </div>
+    </section>
+    <app-contactform></app-contactform>
+    <div class="row">
+        <div class="col-4" *ngFor="let contact of contactService.contacts">
+            <app-contact-component [contactInput]="contact"></app-contact-component>
+        </div>
+
+    </div>
+</div>

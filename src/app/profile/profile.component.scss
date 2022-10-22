@@ -1,0 +1,52 @@
+.section {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 4px;
+
+    .material-icons {
+        font-size: 31px !important;
+        // padding: 10px;
+    }
+
+    .icon-section {
+        color: rgb(124, 124, 199);
+    }
+
+    .section-details {
+        padding: 20px;
+        width: 80%;
+
+        h4 {
+            font-weight: 600;
+            margin: 0 0 6px !important;
+        }
+
+        p {
+            color: #ccc;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .setting {
+        width: 100% !important;
+    }
+}
+
+.setting {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 35%;
+    margin: 20px;
+    border-radius: 4px;
+
+    li {
+        list-style: none;
+        color: rgb(124, 124, 199);
+
+    }
+}

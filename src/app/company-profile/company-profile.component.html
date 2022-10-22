@@ -1,0 +1,48 @@
+<!-- <section fxLayout="row" class="title-company" fxLayoutAlign="start end">
+    <div fxLayout="column">
+    <span>Home /</span>
+    <h3>COMPANY PROFILES</h3>
+    </div>
+</section> -->
+
+<div fxLayout="column" fxLayoutAlign="start end"  fxFlex.sm="100" fxLayout.sm="row">
+    <table width="100%" >
+        <tr class="header">
+            <td>Company</td>
+            <td>Credit limit</td>
+            <td>Balance</td>
+            <td></td>
+
+        </tr>
+        <tr *ngFor="let compaines of company">
+            <td>
+                <span *ngIf="!compaines.editable">
+                    {{compaines.title}}
+                    <div>
+                        <B>{{compaines.discription}}</B>
+                    </div>
+                </span>
+                <div> <input type="text" class="form-control" [(ngModel)]="compaines.discription"
+                        *ngIf="compaines.editable" />
+                </div>
+            </td>
+
+            <td>
+                <span *ngIf="!isVisible">{{compaines.limit}}</span>
+            </td>
+            <td>{{compaines.balance}}</td>
+            <td fxLayout="row" class="icons-table">
+                <i class="fa-solid fa-paperclip"></i>
+                <i class="fa-solid fa-flag"></i><i class="fa-solid fa-table-list"></i>
+                <button (click)="editDomain(compaines)">Edit</button>
+
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+<div fxLayout="column" fxFlex.gt-md="25%" fxHide.sm>
+    <app-sidecomponent></app-sidecomponent>
+</div>

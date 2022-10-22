@@ -1,0 +1,27 @@
+.title-company {
+    background-color: rgb(42, 38, 48);
+    color: #fff;
+    padding: 20px 0 0px 10px
+}
+
+table,
+th,
+td {
+    border: none;
+    border-collapse: collapse;
+    margin: 20px 10px 0 0;
+    width: 98%;
+    padding: 15px;
+
+    .icons-table {
+        i {
+            margin-right: 2px;
+            color: #ccc;
+        }
+    }
+}
+
+.header {
+    background-color: rgb(60, 54, 68);
+    color: #fff;
+}

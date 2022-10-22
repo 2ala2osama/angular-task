@@ -1,0 +1,33 @@
+<section fxFlex="70">
+
+    <div fxLayout="row wrap" fxLayoutAlign="start start">
+        <div *ngFor="let card of cards" [routerLink]="card.router" fxFlex="35" fxFlex.xs="100" fxLayoutGap="10px"
+            fxLayoutAlign="center center" class="section">
+            <div fxLayout="column" class="icon-section" fxLayoutAlign="center start">
+                <i [class]="card.icon"></i>
+            </div>
+            <div fxLayout="column" class="section-details">
+                <h4>{{card.title}}</h4>
+                <p>{{card.discription}}</p>
+            </div>
+        </div>
+
+    </div>
+    <div fxLayout="row" class="setting"  >
+        <div fxLayout="column"   fxFlex.sm="100" fxFlex.xs="100">
+            <h5>Settings & Preferences</h5>
+            <li>Change login settings</li>
+            <li>Set and Edit User Permissions
+            </li>
+            <li>Update your account information
+            </li>
+            <li>CNotification Preferences
+            </li>
+            <li> Master settings</li>
+        </div>
+    </div>
+</section>
+
+<div fxLayout="column" >
+    <app-sidecomponent></app-sidecomponent>
+</div>

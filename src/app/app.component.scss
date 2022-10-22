@@ -1,0 +1,19 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-toolbar {
+    background-color: rgb(60, 54, 68);
+    color: #fff;
+    padding: 10px;
+    height: 70px;
+    font-size: 15px;
+
+    .favorite-icon {
+        padding-right: 20px;
+        margin: auto;
+        span {
+            padding: 0 8px;
+        }
+    }
+}
